@@ -13,14 +13,16 @@ const Recipes = (props) => (
                             style={{ marginBottom: "2rem"}} />
                         </div>
                         <div className="recipe__text">
-                            <h5 className="recipe__title">{recipe.title}</h5> 
+                            <h5 className="recipe__title">
+                            {recipe.title.length < 25 ? `${recipe.title}` : `${recipe.title.substring(0,25)}...`}
+                            </h5> 
                             <p className="recipe__subtitle">Publisher: &nbsp;
                                 <span>
                                     {recipe.publisher}
                                 </span>
                             </p>
                         </div>
-                        <button className="recipe__buttons">View Recipe</button>
+                        <button className="recipe_buttons">View Recipe</button>
                     </div>
                 );
             })
