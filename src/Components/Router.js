@@ -6,7 +6,7 @@ import Recipe from "./Recipe";
 const Router = () => (
     <BrowserRouter>
     <Switch>
-        <Route path="/" component={App} exact/>
+        <Route path="/" component={App} exact />
         <Route path="/recipe" component={Recipe} />
     </Switch>
     </BrowserRouter>
